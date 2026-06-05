@@ -34,9 +34,9 @@ ENV/
 .streamlit/
 
 # Local databases and models
-database/*.db
-model/*.pkl
-model/*.json
+# database/*.db
+# model/*.pkl
+# model/*.json
 
 # OS files
 .DS_Store

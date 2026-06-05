@@ -1,0 +1,10 @@
+{
+    "MAE": 3.0307,
+    "RMSE": 3.9104,
+    "R2": 0.8115,
+    "best_max_depth": 12,
+    "train_samples": 960,
+    "test_samples": 240,
+    "most_influential_feature": "StudyHoursPerDay",
+    "least_influential_feature": "ParticipationInActivities"
+}
