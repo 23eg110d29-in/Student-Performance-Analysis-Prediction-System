@@ -74,7 +74,7 @@ with st.sidebar:
 # 4. Page Routing & Rendering
 if page == "📊 Dashboard":
     st.title("📊 Student Performance Analysis & Prediction System")
-    st.markdown("Analyze how behavioral habits and academic consistency affect student outcomes.")
+    st.markdown("Analyze academic and lifestyle factors affecting student performance and predict final exam scores using Machine Learning.")
     st.markdown("---")
     
     if not os.path.exists(DB_PATH) or not data_generated:
