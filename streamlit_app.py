@@ -40,7 +40,7 @@ if 'db_status' not in st.st_vars if hasattr(st, 'st_vars') else st.session_state
 # 3. Sidebar Configuration
 with st.sidebar:
     st.markdown("<h3 style='text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 0px;'>🎓 Student Performance Analysis & Prediction System</h3>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; color: #6272A4; font-size: 14px;'>Behavior & Habits Analytics</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #6272A4; font-size: 14px;'>Academic Performance Insights</p>", unsafe_allow_html=True)
     st.markdown("---")
     
     # Navigation Radio
