@@ -635,8 +635,13 @@ elif page == "📜 Prediction History":
         if search_query:
             search_query = search_query.lower()
             mask = (
-                filtered_df['performance_category'].str.lower().str.contains(search_query) |
-                filtered_df['timestamp'].str.lower().str.contains(search_query)
+                filtered_df['performance_category'].astype(str).str.lower().str.contains(search_query, na=False) |
+                filtered_df['timestamp'].astype(str).str.lower().str.contains(search_query, na=False) |
+                filtered_df['id'].astype(str).str.lower().str.contains(search_query, na=False) |
+                filtered_df['predicted_score'].astype(str).str.contains(search_query, na=False) |
+                filtered_df['previous_score'].astype(str).str.contains(search_query, na=False) |
+                filtered_df['attendance'].astype(str).str.contains(search_query, na=False) |
+                filtered_df['study_hours'].astype(str).str.contains(search_query, na=False)
             )
             filtered_df = filtered_df[mask]
             
