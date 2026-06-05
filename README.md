@@ -37,7 +37,7 @@ An end-to-end Machine Learning, Data Science, and interactive visualization syst
 
 ```text
 Student-Performance-Prediction/
-├── app.py                      # Streamlit application dashboard
+├── streamlit_app.py            # Streamlit application dashboard
 ├── data/
 │   └── students.csv            # Generated synthetic dataset
 ├── database/
@@ -146,7 +146,7 @@ python src/train_model.py
 Start the Streamlit dashboard:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 The application will launch in your default web browser at `http://localhost:8501`.

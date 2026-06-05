@@ -10,7 +10,7 @@ if __name__ == '__main__':
     sys.argv = [
         "streamlit", 
         "run", 
-        "app.py", 
+        "streamlit_app.py", 
         "--server.headless=true", 
         "--server.port=8501"
     ]
